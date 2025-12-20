@@ -16,6 +16,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -36,4 +40,9 @@ header{
     padding: 16px;
     height: 50px;
     background-color: white;
+}
+
+.header__desktop-logo{
+    height: 37px;
+    width: 140px;
 }

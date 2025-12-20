@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --background-color: #FCFBFF;
+    --violet-button-fill: #652BDF;
+    --violet-font-button: #652BDF;
+    --primary-font-color: #2B2B2B;
+    --secondary-font-color: #6A6A6A;
+    --third-font-color: #454545;
+}

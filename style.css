@@ -20,6 +20,10 @@ ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
 header{
     display: flex;
     justify-content: center;
@@ -45,4 +49,35 @@ header{
 .header__desktop-logo{
     height: 37px;
     width: 140px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header__nav-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__nav-menu li{
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 6px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    height: 42px;
+    font-weight: 700;
+    color: var(--primary-font-color);  
+}
+
+.header__nav-decorator{
+    background-color: #bebebe;
+    width: 1px;
+    height: 24px;
 }

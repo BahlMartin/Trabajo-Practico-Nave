@@ -8,6 +8,9 @@
     --secondary-font-color: #6A6A6A;
     --third-font-color: #454545;
     --background-button-color: rgb(54, 12, 114);
+    --background-color-hover: #E4D7FF;
+    --hover-font-button: #360C99;
+    --hover-font-button-main: rgb(228, 215, 255);
 }
 
 *{
@@ -39,6 +42,7 @@ header{
     background-color: white;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 .header__mobile{
     display: none;
@@ -88,6 +92,14 @@ header{
     color: var(--primary-font-color);
 }
 
+.header__nav-menu li:hover{
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    color: var(--hover-font-button);
+    border-radius: 50px;
+}
+
+
 .header__nav-decorator{
     background-color: #bebebe;
     width: 1px;
@@ -123,9 +135,22 @@ header{
     color: var(--violet-font-button);
 }
 
+.header__nav-link-blog:hover{
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    color: var(--hover-font-button);
+}
+
+
 .header__nav-link-login{
     background-color: var(--violet-button-fill);
     color: white;
+}
+
+.header__nav-link-login:hover{
+    background-color: var(--background-color-hover);
+    cursor: pointer;
+    color: var(--hover-font-button);
 }
 
 .main{
@@ -141,6 +166,10 @@ section{
     margin: 0 auto;
     padding: 0 24px;
     box-sizing: border-box;
+}
+
+.main__cards{
+    margin-bottom: 64px;
 }
 
 .main__cards-title{
@@ -189,7 +218,15 @@ section{
     margin-top: 12px;
     min-height: 213px;
     background-color: white;
+    transition: transform .3s ease-out;
 }
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: none;
+    cursor: default;
+}
+
 .card__img{
     display: flex;
     justify-content: center;
@@ -273,6 +310,11 @@ section{
     border-radius: 50px;
 }
 
+.banner__button:hover{
+    background-color: black;
+    cursor: pointer;
+    color: var(--hover-font-button-main);
+}
 .main__collection{
     display: flex;
     justify-content: center;
@@ -290,15 +332,16 @@ section{
     font-weight: 700;
     line-height: 2.625rem;
     letter-spacing: -.045em;
-    margin: 8px 0;
     color: var(--primary-font-color);
+    margin-top: 8px;
+    margin-bottom: 24px;
 }
 
 .main__collection__description{
     display: block;
     width: 100%;
     max-width: 1022px;
-    margin-bottom: 12px;
+    margin-bottom: 48px;
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
@@ -314,6 +357,7 @@ section{
     max-width: 1022px;
     border-radius: 32px;
     margin-bottom: 48px;
+    background-color: white;
 }
 
 .main__collection__card-reverse{
@@ -367,9 +411,22 @@ section{
     margin-top: 70px;
 }
 
+.main__collection__card-button:hover{
+    text-decoration: none;
+    background-color:  var(--background-button-color);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
 .main__collection__card-img{
     display: flex;
     width: 50%;
+    overflow: hidden;
+}
+
+.main__collection__card-img:hover{
+    transform: scale(1.05);
+    transition: transform .4s ease;
+    transform-origin: 50% 50%;
 }
 
 .main__collection__card-img img{
@@ -416,4 +473,9 @@ section{
     line-height: 1.5rem;
     font-weight: 400;
     color: var(--third-font-color);
+}
+.footer__links__list-item a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--violet-font-button)
 }

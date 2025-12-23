@@ -10,10 +10,10 @@
     <header class="header">
         <div class="header__mobile">
             <div class="header__mobile-menu-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 6C1 5.30964 1.55964 4.75 2.25 4.75H21.75C22.4404 4.75 23 5.30964 23 6C23 6.69036 22.4404 7.25 21.75 7.25H2.25C1.55964 7.25 1 6.69036 1 6Z" fill="#333333"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 11.3096 1.55964 10.75 2.25 10.75H21.75C22.4404 10.75 23 11.3096 23 12C23 12.6904 22.4404 13.25 21.75 13.25H2.25C1.55964 13.25 1 12.6904 1 12Z" fill="#333333"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 18C1 17.3096 1.55964 16.75 2.25 16.75H21.75C22.4404 16.75 23 17.3096 23 18C23 18.6904 22.4404 19.25 21.75 19.25H2.25C1.55964 19.25 1 18.6904 1 18Z" fill="#333333"></path>
+                <svg >
+                    <path  d="M1 6C1 5.30964 1.55964 4.75 2.25 4.75H21.75C22.4404 4.75 23 5.30964 23 6C23 6.69036 22.4404 7.25 21.75 7.25H2.25C1.55964 7.25 1 6.69036 1 6Z" ></path>
+                    <path  d="M1 12C1 11.3096 1.55964 10.75 2.25 10.75H21.75C22.4404 10.75 23 11.3096 23 12C23 12.6904 22.4404 13.25 21.75 13.25H2.25C1.55964 13.25 1 12.6904 1 12Z" ></path>
+                    <path  d="M1 18C1 17.3096 1.55964 16.75 2.25 16.75H21.75C22.4404 16.75 23 17.3096 23 18C23 18.6904 22.4404 19.25 21.75 19.25H2.25C1.55964 19.25 1 18.6904 1 18Z" ></path>
                 </svg>
             </div>
             <div class="header__mobile-logo">
@@ -21,14 +21,15 @@
             </div>
         </div>
         <div class="header__desktop">
-            <a href="https://navenegocios.ar/home" class="header__desktop-logo-text">
-                <img  src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/Logo%20Nave.jpg/jcr:content/renditions/Galicia-Desktop.jpeg" alt="Logo Nave">
-            </a>
-            <nav class="header__nav">
+            <nav class="header__desktop-nav">
+                <a href="https://navenegocios.ar/home" class="header__desktop-logo">
+                    <img  src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/Logo%20Nave.jpg/jcr:content/renditions/Galicia-Desktop.jpeg" alt="Logo Nave">
+                </a>
                 <ul class="header__nav-menu">
-                    <li>Medios de Cobro</li>
-                    <li>Mas Soluciones</li>
+                    <li>Medios de cobro</li>
+                    <li>Más soluciones</li>
                     <li>Beneficios</li>
+                    <div class="header__nav-decorator"></div>
                 </ul>
                 <ul class="header__nav-links">
                     <li>
@@ -60,8 +61,8 @@
                         <h2 class="card__title">Ganas mas con costos bajos</h2>
                         <p class="card__description">Los costos por cobro son bajos para que tu negocio crezca.</p>
                     </div>
-                    <div class="main__cards__container-all__cards__card-unitary">
-                        <div class="main__cards__container-all__cards__card-unitary__img-container">
+                    <div class="card">
+                        <div class="card__img">
                             <img src="./img/costos.PNG" alt="Costos">
                         </div>
                         <h2 class="card__title">Vendés más con promos a tu medida</h2>
@@ -86,7 +87,7 @@
                     <div class="main__collection__card-content">
                         <h2 class="main__collection__card-title">QR</h2>
                         <p class="main__collection__card-description">
-                            ideal para cobrar en tu local o desde donde prefieras sin manejar efectivo
+                            Ideal para cobrar en tu local o desde donde prefieras sin manejar efectivo
                         </p>
                         <a href="https://navenegocios.ar/home/cobrar-con-qr" class="main__collection__card-button">Conocer mas</a>
                     </div>
@@ -94,7 +95,7 @@
                         <img src="https://navenegocios.ar/content/dam/galicia/nave/images/home/img_qr.png">
                     </div>
                 </div>
-                <div class="main__collection__card">
+                <div class="main__collection__card main__collection__card-reverse">
                     <div class="main__collection__card-content">
                         <h2 class="main__collection__card-title">Terminal nave point</h2>
                         <p class="main__collection__card-description">
@@ -118,7 +119,7 @@
                         <img src="https://navenegocios.ar/content/dam/galicia/nave/images/home/img_link.png">
                     </div>
                 </div>
-                <div class="main__collection__card">
+                <div class="main__collection__card main__collection__card-reverse">
                     <div class="main__collection__card-content">
                         <h2 class="main__collection__card-title">Tienda online</h2>
                         <p class="main__collection__card-description">
@@ -137,70 +138,72 @@
         <div class="footer__logo">
             <img src="https://navenegocios.ar/content/dam/galicia/nave/images/logo/LogoNave-Mobile.jpg" alt="Logo Nave">
         </div>
-        <div class="footer__links">
-            <ul class="footer__links__list-links-nave">
-                <span>Nave</span>
-                <li>
-                    <a href="https://navenegocios.ar/home">Cobra con Nave</a>
-                </li>
-                <li>
-                    <a href="https://www.navenegocios.com/login" target="_blank">Entrar a Nave</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/blog">El blog de Nave</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/como-entro-a-nave">Empezar a cobrar</a>
-                </li>
-                <li>
-                    <a href="https://hacetecliente.galicia.ar/solucionesdecobro/latest/index.html?utm_content=comercios&utm_source=bancogalicia.com&utm_medium=NAVE&utm_campaign=botonhacetecliente" target="_blank">Abrir cuenta en Galicia</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/cobranzas-integradas" target="_blank">Cobranzas integradas</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/developers">Nave Developers</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/integraciones">Integraciones</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__links">
-            <ul class="footer__links__list-medios-cobro">
-                <span>Medios de cobro</span>
-                <li>
-                    <a href="https://navenegocios.ar/home/cobrar-con-qr">Cobra con QR</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/cobrar-con-tienda-online">Cobra por tu tienda online</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/cobrar-con-link-de-pago">Cobra con Link de pago</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/cobrar-con-nave-point">Cobra con Nave Point</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__links">
-            <ul class="footer__links__list-beneficios">
-                <span>Beneficios</span>
-                <li>
-                    <a href="https://navenegocios.ar/home/promociones">Promociones</a>
-                </li>
-                <li>
-                    <a href="https://navenegocios.ar/home/promociones/mapa-de-nave">Mapa de Nave</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__links">
-            <ul class="footer__links__list-interesar">
-                <span>Te puede interesar</span>
-                <li>
-                    <a href="https://www.galicia.ar/personas">Galicia</a>
-                </li>
-            </ul>
+        <div class="footer__links-container">
+            <div class="footer__links">
+                <ul class="footer__links__list-links-nave">
+                    <span class="footer__links-title">Nave</span>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home">Cobra con Nave</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://www.navenegocios.com/login" target="_blank">Entrar a Nave</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/blog">El blog de Nave</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/como-entro-a-nave">Empezar a cobrar</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://hacetecliente.galicia.ar/solucionesdecobro/latest/index.html?utm_content=comercios&utm_source=bancogalicia.com&utm_medium=NAVE&utm_campaign=botonhacetecliente" target="_blank">Abrir cuenta en Galicia</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/cobranzas-integradas" target="_blank">Cobranzas integradas</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/developers">Nave Developers</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/integraciones">Integraciones</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links__list-medios-cobro">
+                    <span class="footer__links-title">Medios de cobro</span>
+                    <li class="footer__links__list-item"> 
+                        <a href="https://navenegocios.ar/home/cobrar-con-qr">Cobra con QR</a>
+                    </li>
+                    <li  class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/cobrar-con-tienda-online">Cobra por tu tienda online</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/cobrar-con-link-de-pago">Cobra con Link de pago</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/cobrar-con-nave-point">Cobra con Nave Point</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links__list-beneficios">
+                    <span class="footer__links-title">Beneficios</span>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/promociones">Promociones</a>
+                    </li>
+                    <li class="footer__links__list-item">
+                        <a href="https://navenegocios.ar/home/promociones/mapa-de-nave">Mapa de Nave</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <ul class="footer__links__list-interesar">
+                    <span class="footer__links-title">Te puede interesar</span>
+                    <li class="footer__links__list-item">
+                        <a href="https://www.galicia.ar/personas">Galicia</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
